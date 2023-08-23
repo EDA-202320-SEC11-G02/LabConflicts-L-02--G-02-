@@ -120,26 +120,22 @@ def addBookTag(catalog, booktag):
 
 # Funciones de consulta
 
-def bookSize(catalog):
-    # TODO Mods de Est-3 en el Lab 2
-    pass
-
-
-def tagSize(catalog):
-    # TODO Mods de Est-3 en el Lab 2
-    pass
-
-
-def bookTagSize(catalog):
-    # TODO Mods de Est-3 en el Lab 2
-    pass
-
-
-def firstBook(catalog):
-    # TODO Mods de Est-3 en el Lab 2
-    pass
-
-
-def lastBook(catalog):
-    # TODO Mods de Est-3 en el Lab 2
-    pass
+def bookSize(catalog): 
+    # TODO Mods de Est-3 en el Lab 2 
+    return lt.size(catalog["books"]) 
+ 
+def tagSize(catalog): 
+    # TODO Mods de Est-3 en el Lab 2 
+    return lt.size(catalog["tags"]) 
+ 
+def bookTagSize(catalog): 
+    # TODO Mods de Est-3 en el Lab 2 
+    return lt.size(catalog["book_tags"]) 
+ 
+def firstBook(catalog): 
+    # TODO Mods de Est-3 en el Lab 2 
+    return lt.firstElement(catalog["books"]) 
+ 
+def lastBook(catalog): 
+    # TODO Mods de Est-3 en el Lab 2 
+    return lt.lastElement(catalog["books"]) 
